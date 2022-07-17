@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 *Task 1: Software configuration*
 
 Subtask 1: Why did I choose to participate in the challenge portfolio?
@@ -13,4 +11,3 @@ some experiences. Additionally I can practise my english.
 I'm really happy that I can take part in this challenge!
 
 Ania
->>>>>>> 0bd5899c9a325cbdbe9757b888919f54a6f66ae9
