@@ -11,3 +11,5 @@ some experiences. Additionally I can practise my english.
 I'm really happy that I can take part in this challenge!
 
 Ania
+
+TASK 2: Selectors
