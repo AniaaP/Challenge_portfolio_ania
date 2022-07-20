@@ -12,4 +12,32 @@ I'm really happy that I can take part in this challenge!
 
 Ania
 
-TASK 2: Selectors
+*Task 2: Selectors*T
+
+
+
+**login_field_xpath**
+//*[@id="login"]
+//*[@name="login"]
+//input[@type="text"]
+
+
+**password_field_xpath**
+//*[@id="password"]
+//*[@name="password"]
+//input[@type="password"]
+
+**remaind_password_hyperlink_xpath**
+//*[@id="__next"]/form/div/div[1]/a
+//*[text()="Remind password"]
+
+
+**language_comobox_xpath**
+//*[@id="__next"]/form/div/div[2]/div/div
+//*[@class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"] 
+
+
+**sign_in_button_xpath**
+//*[@id="__next"]/form/div/div[2]/button/span[1]
+//span/text()
+
