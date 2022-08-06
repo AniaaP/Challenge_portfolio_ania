@@ -30,12 +30,13 @@ Ania
 **remaind_password_hyperlink_xpath**\
 //*[@id="__next"]/form/div/div[1]/a\
 //*[text()="Remind password"]\
+//a[@class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss35 MuiTypography-colorPrimary"]
 
 
 **language_comobox_xpath**\
 //*[@id="__next"]/form/div/div[2]/div/div\
-//*[@class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"] 
-
+//*[@class="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"]\
+//*[@role="button"]
 
 **sign_in_button_xpath**\
 //*[@id="__next"]/form/div/div[2]/button/span[1]\
