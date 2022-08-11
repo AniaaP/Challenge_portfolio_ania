@@ -1,8 +1,6 @@
 import os
 import unittest
 
-from selenium.webdriver.chrome.service import Service
-
 from selenium import webdriver
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
@@ -35,7 +33,7 @@ class TestMediumPage(unittest.TestCase):
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
     def test_check_title(self):
-        actual_title = self.gest_page_title('https://medium.com')
+        actual_title = self.get_page_title('https://medium.com')
         expected_title = 'Medium – Where good ideas find you.'
         assert actual_title == expected_title
 
