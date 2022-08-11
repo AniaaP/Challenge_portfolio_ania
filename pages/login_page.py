@@ -11,3 +11,10 @@ class LoginPage(BasePage):
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
+
+
+def type_in_password(self, email):
+    self.field_send_keys(self.login_field_xpath, email)
+
+    def click_on_the_sign_in_button(self, email):
+        self.field_send_keys(self.login_field_xpath, email)
