@@ -4,6 +4,10 @@ from pages.base_page import BasePage
 class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
+    element = "//*[@id='__next']/form/div/div[1]/h5"
+    element_text = "Scouts Panel"
+    login_url = 'https://scouts-test.futbolkolektyw.pl/'
+    expected_title = "Scouts panel - sign in"
     remaind_password_hyperlink_xpath = "//*[@id='__next']/form/div/div[1]/a"
     language_comobox_xpath = "//*[@id='__next']/form/div/div[2]/div/div"
     sign_in_button_xpath = "//*[@id='__next']/form/div/div[2]/button/span[1]"
@@ -19,3 +23,6 @@ class LoginPage(BasePage):
 
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
+
+    def assert_element_text(self, driver, xpath, expected_text):
+        assert self.driver.find_element(self.login_url) == self.element.text
