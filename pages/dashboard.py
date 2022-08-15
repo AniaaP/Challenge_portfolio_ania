@@ -12,11 +12,6 @@ class Dashboard(BasePage):
         time.sleep(4)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
 
-    def assert_element_text(self, driver, xpath, expected_text):
-        time.sleep(4)
-        assert self.driver.find_element(self.login_url) == self.element.text
-
-
     head_1 = "//*[@id='__next']/div[1]/header/div/h6"
     main_page_menu = "//*[@id='__next']/div[1]/div/div/div/ul[1]/div[1]/div[2]/span"
     players_menu = "//*[@id='__next']/div[1]/div/div/div/ul[1]/div[2]/div[2]/span"

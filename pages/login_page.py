@@ -24,5 +24,5 @@ class LoginPage(BasePage):
     def title_of_page(self):
         assert self.get_page_title(self.login_url) == self.expected_title
 
-    def assert_element_text(self, driver, xpath, expected_text):
-        assert self.driver.find_element(self.login_url) == self.element.text
+    def check_title_of_header(self):
+        self.assert_element_text(self.driver, self.element, self.element_text)
