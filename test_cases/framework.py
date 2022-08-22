@@ -45,7 +45,25 @@ class TestMediumPage(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-    # Element of the first task: Try to search the Internet yourself how to get rid of the error:
-    # "DeprecationWarning: executable_path has been deprecated, please pass in a Service object"
+#class TestAddPlayerFormm(unittest.TestCase):
 
+    @classmethod
+    def setUp(self):
+        os.chmod(DRIVER_PATH, 755)
+        self.driver = webdriver.Chrome(executable_path=DRIVER_PATH)
+        self.driver.get('https://scouts-test.futbolkolektyw.pl/pl/players/add')
+        self.driver.fullscreen_window()
+        self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
+    def test_check_titlee(self):
+        actual_titlee = self.get_page_titlee('https://scouts-test.futbolkolektyw.pl/pl/players/add')
+        expected_titlee = 'Add player'
+        assert actual_titlee == expected_titlee
+
+    def get_page_titlee(self, url):
+        self.driver.get(url)
+        return self.driver.title
+
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()

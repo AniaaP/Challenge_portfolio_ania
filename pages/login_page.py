@@ -7,7 +7,7 @@ class LoginPage(BasePage):
     element = "//*[@id='__next']/form/div/div[1]/h5"
     element_text = "Scouts Panel"
     login_url = 'https://scouts-test.futbolkolektyw.pl/'
-    expected_title = "Scouts panel - sign in"
+    expected_title = 'Scouts panel - sign in'
     remaind_password_hyperlink_xpath = "//*[@id='__next']/form/div/div[1]/a"
     language_comobox_xpath = "//*[@id='__next']/form/div/div[2]/div/div"
     sign_in_button_xpath = "//*[@id='__next']/form/div/div[2]/button/span[1]"

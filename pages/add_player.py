@@ -1,5 +1,6 @@
 from pages.base_page import BasePage
 
+
 class AddPlayer(BasePage):
     name_field_xpath = "//*[@id='__next']/div[1]/main/div[2]/form/div[2]/div/div[2]/div/div/input"
     surname_field_xpath = "//*[@id='__next']/div[1]/main/div[2]/form/div[2]/div/div[3]/div/div/input"
